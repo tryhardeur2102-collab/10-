@@ -1,0 +1,51 @@
+# Ultime recompense !
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Récompense spéciale 🎁</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #00ff99, #00ccff);
+      color: black;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    button {
+      font-size: 25px;
+      padding: 15px 30px;
+      background: gold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .alert {
+      margin-top: 40px;
+      font-size: 30px;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>💸 Bravo !</h1>
+  <p>Tu as été sélectionné pour recevoir <b>10 €</b> !</p>
+  <button onclick="troll()">Clique ici pour récupérer ton argent</button>
+
+  <div class="alert" id="fakeAlert">⚠️ ALERTE !! tu viens d'être pirater !! <br>!FUITE! ! libération des données !</div>
+
+  <script>
+    function troll() {
+      document.getElementById("fakeAlert").style.display = "block";
+      alert("🔒 destruction du firewall !🔥");
+      setTimeout(() => {
+        alert("☠👾☠️👾☠ !");
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
